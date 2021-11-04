@@ -1,47 +1,38 @@
 .Home {
-    background: #8e2de2; /* fallback for old browsers */
+    background: #8e2de2; 
     background: -webkit-linear-gradient(
         to right,
         #4a00e0,
         #8e2de2
-    ); /* Chrome 10-25, Safari 5.1-6 */
+    ); 
     background: linear-gradient(
         to right,
         #4a00e0,
         #8e2de2
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    );
     min-height: 100vh;
     text-align: center;
     padding-top: 40vh;
-    padding-left: 70vh;
 }
 
-.fancy-button {
-    position: relative;
-    display: block;
-    cursor: pointer;
-    perspective: 1800px;
-}
-.fancy-flipper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform-style: preserve-3d;
-    transform: rotateX(-90deg);
-    transition: transform 0.3s ease;
-}
-.fancy-front,
-.fancy-back {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    backface-visibility: hidden;
+.upload{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 .button-text {
     letter-spacing: 0.01em;
     font-family: Futura, "Helvetica Neue", Helvetica, sans-serif;
 }
+
+#fancy-button {
+    cursor: pointer;
+    background-color: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    border-radius: 4px;
+    outline: none;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+    padding:20%;
+  }
