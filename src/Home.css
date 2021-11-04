@@ -1,0 +1,47 @@
+.Home {
+    background: #8e2de2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #4a00e0,
+        #8e2de2
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #4a00e0,
+        #8e2de2
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 40vh;
+    padding-left: 70vh;
+}
+
+.fancy-button {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    perspective: 1800px;
+}
+.fancy-flipper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    transform: rotateX(-90deg);
+    transition: transform 0.3s ease;
+}
+.fancy-front,
+.fancy-back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+.button-text {
+    letter-spacing: 0.01em;
+    font-family: Futura, "Helvetica Neue", Helvetica, sans-serif;
+}
